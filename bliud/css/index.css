@@ -8,13 +8,13 @@ form {
   margin-top: 50px;
   text-align: center; }
 
-.hero {
-  width: 100%;
-  height: 400px; }
+.pic {
+  margin: auto;
+  width: 50%; }
 
 h1, p {
-  color: #fff;
-  font-size: 30px;
+  color: black;
+  font-size: 50px;
   text-align: center; }
 
 a {

@@ -25,9 +25,10 @@ $img = $row3['item_values'];
     <title>Document</title>
 </head>
 <body style="background-color:<?=$background_color?>">
-<div class="hero"style="background-image:url(/upload/<?=$img?>)">
+<div class="hero">
 <h1><?=$title?></h1> 
 <p><?=$description?></p>
+<img class="pic" src="/upload/<?=$img?>" alt="">
 </div>
 </body>
 </html>
