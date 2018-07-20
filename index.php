@@ -1,18 +1,10 @@
 <?php
 include('config.php');
-
-$query_title= mysqli_query($database,"SELECT * from homepage where item_variable like 'title'");
-$query_description= mysqli_query($database,"SELECT * from homepage where item_variable like 'description'");
-$query_background_color= mysqli_query($database,"SELECT * from homepage where item_variable like 'background_color'");
-$query_hero_image= mysqli_query($database,"SELECT * from homepage where item_variable like 'hero_image'");
-$row = mysqli_fetch_array($query_title);
-$row1 = mysqli_fetch_array($query_description);
-$row2 = mysqli_fetch_array($query_background_color);
-$row3 = mysqli_fetch_array($query_hero_image);
-$title = $row['item_values'];
-$description = $row1['item_values'];
-$background_color = $row2['item_values'];
-$img = $row3['item_values'];  
+include('db_helper.php');
+$title = get_select('homepage','title');
+$description = get_select('homepage','description');
+$background_color = get_select('homepage','background_color');
+$img = get_select('homepage','hero_image');
 ?>
 
 <html lang="en">
